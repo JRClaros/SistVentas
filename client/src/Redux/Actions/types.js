@@ -1,0 +1,2 @@
+export const GET_GLOBALS = "GET_GLOBALS"
+export const GET_GLOBALS_ID = "GET_GLOBALS_ID"
