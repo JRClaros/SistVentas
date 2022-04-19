@@ -2,7 +2,7 @@ import axios from "axios";
 import { cloudynary } from "../../helpers/cloudinary.js";
 
 
-import { GET_GLOBALS, GET_GLOBALS_ID } from './types.js';
+import { GET_GLOBALS, GET_GLOBALS_ID, GET_SUCURSALES } from './types.js';
 
 export const getAllGlobals = () =>{
     return async function (dispatch){
@@ -50,3 +50,13 @@ export const uploadImageCloud = (formData) => {
       return body;
     };
   };
+
+export const getAllSucursales = () =>{
+    return async (dispatch) =>{
+        let json = await axios.get("http://localhost:3001/Sucursal");
+        return dispatch({
+            type: GET_SUCURSALES,
+            payload: json.data
+        })
+    }
+}

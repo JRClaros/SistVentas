@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import TblGlobal from './components/TblGlobal';
 import FrmEditGlobal from './components/FrmEditGlobal';
+import TblSucursales from './components/TblSucursales';
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
 
       <Routes>
         <Route path="/Global" element={<TblGlobal/>} />
-        {/* <Route path="/GetGlobal/:id" element={<FrmEditGlobal/>} /> */}
+        <Route path="/Sucursal" element={<TblSucursales/>} />
       </Routes>  
       <Footer />
     </BrowserRouter>

@@ -1,8 +1,9 @@
-import { GET_GLOBALS, GET_GLOBALS_ID } from "../Actions/types";
+import { GET_GLOBALS, GET_GLOBALS_ID, GET_SUCURSALES } from "../Actions/types";
 
 const initialState = {
     globals:[],
-    globalsId:[]
+    globalsId:[],
+    sucursales:[]
 };
 
 export default function rootReducer(state = initialState, {type, payload}){
@@ -17,7 +18,12 @@ export default function rootReducer(state = initialState, {type, payload}){
                 return{
                     ...state,
                     globalsId: payload
-                }  
+                }
+            case GET_SUCURSALES:
+                return{
+                    ...state,
+                    sucursales: payload
+                }      
 
         default:
             return state;

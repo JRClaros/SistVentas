@@ -120,11 +120,11 @@ export default function Aside() {
                 </li>
                 <li className="nav-item">
                   <a
-                    href="pages/layout/top-nav-sidebar.html"
+                    href="/Sucursal"
                     className="nav-link"
                   >
                     <i className="far fa-circle nav-icon" />
-                    <p>Sucursal</p>
+                    <p>Sucursales</p>
                   </a>
                 </li>
                 <li className="nav-item">

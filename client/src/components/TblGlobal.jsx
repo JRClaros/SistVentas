@@ -110,10 +110,11 @@ export default function TblGlobal() {
         <tbody>
           {
           //  AllGlobals.length && 
-          AllGlobals.length && AllGlobals?.map(g => {
+          AllGlobals.length && AllGlobals?.map((g,index) => {
              return(
                 <tr>
-                  <td className='text-center'>{g.idglobal}</td>
+                  {/* <td className='text-center'>{g.idglobal}</td> */}
+                  <td className='text-center'>{index+1}</td>
                   <td>{g.empresa}</td>
                   <td className='text-center'>{g.nombre_impuesto}</td>
                   <td className='text-center'>{g.porcentaje_impuesto}</td>
